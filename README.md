@@ -1,5 +1,5 @@
 # HHVM-LIVE
-Config Files for creating Live-build bootable ISO for HHVM
+Config Files for creating Live-build Debian(stretch) bootable ISO for HHVM
 
 ### Requirement
 
