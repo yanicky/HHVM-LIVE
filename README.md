@@ -9,7 +9,7 @@ While it's probably possible to build on other configuration, HHVM is not yet su
 
 ``` git clone https://github.com/yanicky/HHVM-LIVE;```
 
-
+### Building 
 use the following commands in the base directory to build the iso
 
 ``` cd HHVM-LIVE```
