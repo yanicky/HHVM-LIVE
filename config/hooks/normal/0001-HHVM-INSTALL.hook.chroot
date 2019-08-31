@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -e;
+echo "Installing HHVM";
+
+apt-get update;
+curl https://dl.hhvm.com/conf/hhvm.gpg.key | apt-key add -;
+add-apt-repository https://dl.hhvm.com/debian;
+apt-get update;
+apt-get install hhvm -y;
