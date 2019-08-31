@@ -1,5 +1,5 @@
 # HHVM-LIVE
-Config Files for creating Live-build Debian(stretch) bootable ISO for [HHVM](https://hhvm.com)
+Config Files for creating or remastering Live-build Debian(stretch) bootable ISO for [HHVM](https://hhvm.com)
 
 ### What is HHVM
 
