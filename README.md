@@ -9,7 +9,7 @@ HipHop Virtual Machine (HHVM) is an open-source virtual machine based on just-in
 
 1. Debian(stretch) base
 2. Nginx web server
-3. PHP-FPM interpreter
+3. PHP-FPM daemon
 4. HHVM deamon
 5. OpenSSH daemon
 6. Some Console utilities(git, nano)
