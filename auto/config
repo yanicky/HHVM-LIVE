@@ -1,0 +1,13 @@
+#!/bin/sh
+
+set -e
+
+lb config noauto \
+    --mode debian \
+    --architectures amd64 \
+    --distribution stretch \
+    --linux-packages "linux-image linux-headers" \
+    --debian-installer false \
+    --archive-areas "main contrib non-free" \
+    --apt-indices false \
+    "${@}"
