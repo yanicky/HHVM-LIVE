@@ -1,4 +1,5 @@
 linux-perf
+firmware-realtek
 software-properties-common
 apt-transport-https
 curl
