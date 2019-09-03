@@ -11,9 +11,10 @@ apt-get install hhvm -y;
 echo "Running hhvm install_fastcgi.sh";
 sh /opt/hhvm/4.20.1/share/hhvm/install_fastcgi.sh
 echo "Configuring NGINX *.(hh|hack) with hhvm.sock";
-echo "location ~ \.(hh|hack)$ {fastcgi_keep_conn on; fastcgi_pass unix:/var/run/hhvm/hhvm.sock; fastcgi_index  index.hack;fastcgi_param  SCRIPT_FILENAME \$document_root\$fastcgi_script_name; include fastcgi_params;}" > /etc/nginx/hhvm.conf
+echo "location ~ \.(hh|hack)$ {fastcgi_keep_conn on; fastcgi_pass unix:/var/run/hhvm/hhvm.sock; fastcgi_index  index.hack; fastcgi_param  SCRIPT_FILENAME \$document_root\$fastcgi_script_name; include fastcgi_params;}" > /etc/nginx/hhvm.conf
 echo "Configuring NGINX *.php files with php7.3-fpm.sock";
-echo "location ~ \.php$ {try_files \$uri =404;fastcgi_pass unix:/var/run/php/php7.3-fpm.sock;fastcgi_index index.php;  fastcgi_param  SCRIPT_FILENAME \$document_root\$fastcgi_script_name; include /etc/nginx/fastcgi_params;}" >> /etc/nginx/hhvm.conf
+
+echo "location ~ \.php$ {try_files \$uri =404;fastcgi_pass unix:/var/run/php/php7.3-fpm.sock; fastcgi_index index.php; fastcgi_param  SCRIPT_FILENAME \$document_root\$fastcgi_script_name; include /etc/nginx/fastcgi_params;}" >> /etc/nginx/hhvm.conf
 
 echo "; php options" > /etc/hhvm/server.ini
 
