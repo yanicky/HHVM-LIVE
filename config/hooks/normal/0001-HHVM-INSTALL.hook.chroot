@@ -8,3 +8,4 @@ curl https://dl.hhvm.com/conf/hhvm.gpg.key | apt-key add -;
 add-apt-repository https://dl.hhvm.com/debian;
 apt-get update;
 apt-get install hhvm -y;
+sh /opt/hhvm/4.20.1/share/hhvm/install_fastcgi.sh
