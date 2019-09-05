@@ -19,10 +19,11 @@ HipHop Virtual Machine (HHVM) is an open-source virtual machine based on just-in
 
 While it's probably possible to build on other configuration, HHVM is not yet supported on Debian(buster) so this live-build configuration is designed for building HHVM-LIVE on Debian(stretch) and require live-build to be installed.
 
-### Installation
 ``` sudo apt-get update;```
 
 ``` sudo apt-get install live-build;```
+
+### Installation
 
 ``` git clone https://github.com/yanicky/HHVM-LIVE;```
 
