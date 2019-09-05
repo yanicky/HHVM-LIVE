@@ -1,0 +1,13 @@
+# Get the key for apt
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -;
+# add the docker repository
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/debian \
+   $(lsb_release -cs) \
+   stable";
+# Get package list
+apt-get update;
+# Install docker-ce
+apt-get install docker-ce;
+# Test with Hello 
+docker run hello-world;
