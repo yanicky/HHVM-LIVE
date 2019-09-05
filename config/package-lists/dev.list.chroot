@@ -2,3 +2,9 @@ git
 build-essential
 module-assistant
 dkms
+libtool
+autotools-dev
+automake
+pkg-config
+bsdmainutils
+python3
