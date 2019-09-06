@@ -35,3 +35,6 @@ use the following commands in the base directory to build the iso
 ```lb config; sudo lb clean; sudo lb build;```
 
 Creating a iso file named live-image-amd64.hybrid.iso of about 420MB.
+
+### Troubleshooting
+* Secure Boot(UEFI) need to be disabled since it's not configured in the live-build config yet and will require user bios configuration to work.
