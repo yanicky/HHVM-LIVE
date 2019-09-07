@@ -32,7 +32,7 @@ use the following commands in the base directory to build the iso
 
 ``` cd HHVM-LIVE```
 
-```lb config; sudo lb clean; sudo lb build;```
+```sh auto/config; sudo lb clean; sudo lb build;```
 
 Creating a iso file named live-image-amd64.hybrid.iso of about 420MB.
 
