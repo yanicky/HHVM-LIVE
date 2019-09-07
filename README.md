@@ -21,7 +21,7 @@ While it's probably possible to build on other configuration, HHVM is not yet su
 
 ``` sudo apt-get update;```
 
-``` sudo apt-get install live-build;```
+``` sudo apt-get install git live-build;```
 
 ### Installation
 
@@ -30,7 +30,7 @@ While it's probably possible to build on other configuration, HHVM is not yet su
 ### Building the bootable ISO image
 use the following commands in the base directory to build the iso
 
-``` cd HHVM-LIVE```
+``` cd HHVM-LIVE;```
 
 ```sh auto/config; sudo lb clean; sudo lb build;```
 
