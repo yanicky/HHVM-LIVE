@@ -16,8 +16,10 @@ HipHop Virtual Machine (HHVM) is an open-source virtual machine based on just-in
 7. [DEB.SURY.ORG](https://deb.sury.org) Repository for PHP-DEV
 
 ### Requirement
+* git
+* live-build
 
-While it's probably possible to build on other configuration, HHVM is not yet supported on Debian(buster) so this live-build configuration is designed for building HHVM-LIVE on Debian(stretch) and require live-build to be installed.
+While it's probably possible to build on other configuration, HHVM is not yet supported on Debian(buster) so this live-build configuration is designed for building HHVM-LIVE on a Debian(stretch) base.
 
 ``` sudo apt-get update;```
 
