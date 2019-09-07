@@ -38,5 +38,8 @@ use the following commands in the base directory to build the iso
 
 Creating a iso file named live-image-amd64.hybrid.iso of about 420MB.
 
+### Remastering
+Optional configuration files are placed in opt/ just copy them in config/proper/subfolder before running the build command.
+
 ### Troubleshooting
 * Secure Boot(UEFI) need to be disabled since it's not configured in the live-build config yet and will require user bios configuration to work.
