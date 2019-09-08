@@ -12,14 +12,14 @@ lb config noauto \
     --firmware-binary true \
     --archive-areas "main contrib non-free" \
     --parent-archive-areas "main contrib non-free" \
-    --parent-mirror-bootstrap "$debian_mirror" \
-    --parent-mirror-binary "$debian_mirror" \
+    --parent-mirror-bootstrap "\$debian_mirror" \
+    --parent-mirror-binary "\$debian_mirror" \
     --iso-application "HHVM_LIVE" \
     --iso-publisher "yanicky" \
     --iso-volume "HHVM LIVE" \
-    --mirror-chroot "$debian_mirror" \
-    --mirror-bootstrap "$debian_mirror" \
-    --mirror-debian-installer "$debian_mirror" \
-    --mirror-binary "$debian_mirror" \
+    --mirror-chroot "\$debian_mirror" \
+    --mirror-bootstrap "\$debian_mirror" \
+    --mirror-debian-installer "\$debian_mirror" \
+    --mirror-binary "\$debian_mirror" \
     --apt-indices false \
     "${@}"
