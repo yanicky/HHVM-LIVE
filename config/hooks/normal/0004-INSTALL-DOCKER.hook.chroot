@@ -9,5 +9,7 @@ sudo add-apt-repository \
 apt-get update;
 # Install docker-ce
 apt-get install docker-ce -y;
+# starting docker service
+systemctl start docker;
 # Test with Hello 
 docker run hello-world;
