@@ -8,6 +8,6 @@ sudo add-apt-repository \
 # Get package list
 apt-get update;
 # Install docker-ce
-apt-get install docker-ce;
+apt-get install docker-ce -y;
 # Test with Hello 
 docker run hello-world;
