@@ -10,6 +10,6 @@ apt-get update;
 # Install docker-ce
 apt-get install docker-ce -y;
 # starting docker service
-systemctl start docker;
+systemctl enable docker;
 # Test with Hello 
-docker run hello-world;
+# docker run hello-world;
