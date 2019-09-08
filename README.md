@@ -28,18 +28,19 @@ While it's probably possible to build on other configuration, HHVM is not yet su
 
 ``` sudo apt-get install git live-build;```
 
-### Installation
+### Installation methods
 
-``` git clone https://github.com/yanicky/HHVM-LIVE;```
+1. (recommended) ``` git clone https://github.com/yanicky/HHVM-LIVE; cd HHVM-LIVE;```
+``` ```
+2. (other) ``` mkdir HHVM-LIVE; cd HHVM-LIVE; lb config --config=https://github.com/yanicky/HHVM-LIVE```
+
 
 ### Building the bootable ISO image
-use the following commands in the base directory to build the iso
-
-``` cd HHVM-LIVE;```
+use the following commands in the base directory(HHVM-LIVE) to build the iso
 
 ```sh auto/config; sudo lb clean; sudo lb build;```
 
-Creating a iso file named live-image-amd64.hybrid.iso of about 420MB.
+Creating a iso file named live-image-amd64.hybrid.iso of about 592MB.
 
 ### Remastering
 Optional configuration files are placed in opt/ just copy them in config/proper/subfolder before running the build command.
